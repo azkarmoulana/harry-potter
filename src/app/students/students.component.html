@@ -1,0 +1,12 @@
+<div class="container mt-5">
+        <h1 class="text-center text-muted">Students</h1>
+      </div>
+      <hr />
+      
+      <div class="row">
+        <div class="col-md-3" *ngFor="let student of students">
+          <img [src]="student.image" alt="..." class="img-thumbnail" />
+          <p>{{ student.name }}</p>
+        </div>
+      </div>
+      

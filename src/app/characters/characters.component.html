@@ -1,0 +1,11 @@
+<div class="container mt-5">
+  <h1 class="text-center text-muted">Find your best Harry Potter characters</h1>
+</div>
+<hr />
+
+<div class="row">
+  <div class="col-md-3" *ngFor="let character of characters">
+    <img [src]="character.image" alt="..." class="img-thumbnail" />
+    <p>{{ character.name }}</p>
+  </div>
+</div>
